@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view class="container">
+  <input class="input1" placeholder="请输入快递单号" bindinput="input1"/>
+  <button class="bt1" type="primary" id="bt1" bindtap="bt1" size="mini">查询</button>
+
+  <scroll-view scroll-y="true" style="height: 300rpx;">
+    <view wx:for="{{dataList}}">
+      [{{item.time}}] {{item.status}}
+    </view>
+  </scroll-view>
+</view>
